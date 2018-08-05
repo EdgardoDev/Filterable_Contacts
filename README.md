@@ -1,11 +1,11 @@
 # Filterable Contacts
----
+
 Simple filterable contact list using pure vanilla JS
 
 ## Technologies Used
 
-- *Vanilla JavaScript*
-- *Bulma CSS framework*
+- Vanilla JavaScript
+- Bulma CSS framework
 
 ## Live Demo
 
