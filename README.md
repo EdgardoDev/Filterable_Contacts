@@ -9,7 +9,7 @@ Simple filterable contact list using pure vanilla JS
 
 ## Live Demo
 
-[Filterable Contact List](https://edgardopinto-escalier.github.io/Filterable_Contacts/)
+[FILTERABLE CONTACT LIST](https://edgardopinto-escalier.github.io/Filterable_Contacts/)
 
 
 
