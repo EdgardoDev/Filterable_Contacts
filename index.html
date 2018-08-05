@@ -5,8 +5,201 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Filterable Contact List</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  
+<section class="hero is-medium is-primary is-bold">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title is-size-2">
+        FILTERABLE CONTACT LIST
+      </h1>
+      <h2 class="subtitle is-size-3">
+        USING PURE VANILLA JS
+      </h2>
+    </div>
+  </div>
+</section>
+<br>
+<div class="container">
+  <div class="row">
+    <p class="control has-icons-left">
+      <input id="filterInput" class="input is-size-4" type="text" placeholder="Search names here">
+      <span class="icon is-size-4 is-left">
+        <i class="fa fa-search"></i>
+      </span>
+    </p>
+  </div>
+  <br>
+  <div class="row">
+    <ul id="contactName" class="panel">
+      <li class="panel-heading header">
+        <h1 class="is-size-3 has-text-white">Contact Name</h1>
+      </li>
+      <li class="panel-block">
+        <span class="panel-icon is-size-4">
+          <i class="fas fa-user-edit is-size-4"></i>
+        </span>
+        <p class="is-size-4">Isabelle</p>
+      </li>
+      <li class="panel-block">
+        <span class="panel-icon is-size-4">
+          <i class="fas fa-user-edit is-size-4"></i>
+        </span>
+        <p class="is-size-4">Ursula</p>
+      </li>
+      <li class="panel-block">
+        <span class="panel-icon is-size-4">
+          <i class="fas fa-user-edit is-size-4"></i>
+        </span>
+        <p class="is-size-4">Penny</p>
+      </li>
+      <li class="panel-block">
+        <span class="panel-icon is-size-4">
+          <i class="fas fa-user-edit is-size-4"></i>
+        </span>
+        <p class="is-size-4">Xena</p>
+      </li>
+      <li class="panel-block">
+        <span class="panel-icon is-size-4">
+          <i class="fas fa-user-edit is-size-4"></i>
+        </span>
+        <p class="is-size-4">Sophie</p>
+      </li>
+      <li class="panel-block">
+        <span class="panel-icon is-size-4">
+          <i class="fas fa-user-edit is-size-4"></i>
+        </span>
+        <p class="is-size-4">Gabrielle</p>
+      </li>
+      <li class="panel-block">
+        <span class="panel-icon is-size-4">
+          <i class="fas fa-user-edit is-size-4"></i>
+        </span>
+        <p class="is-size-4">Walter</p>
+      </li>
+      <li class="panel-block">
+        <span class="panel-icon is-size-4">
+          <i class="fas fa-user-edit is-size-4"></i>
+        </span>
+        <p class="is-size-4">Yasemin</p>
+      </li>
+      <li class="panel-block">
+        <span class="panel-icon is-size-4">
+          <i class="fas fa-user-edit is-size-4"></i>
+        </span>
+        <p class="is-size-4">Nicole</p>
+      </li>
+      <li class="panel-block">
+        <span class="panel-icon is-size-4">
+          <i class="fas fa-user-edit is-size-4"></i>
+        </span>
+        <p class="is-size-4">Charlie</p>
+      </li>  
+      <li class="panel-block">
+        <span class="panel-icon is-size-4">
+          <i class="fas fa-user-edit is-size-4"></i>
+        </span>
+        <p class="is-size-4">Brooke</p>
+      </li>
+      <li class="panel-block">
+        <span class="panel-icon is-size-4">
+          <i class="fas fa-user-edit is-size-4"></i>
+        </span>
+        <p class="is-size-4">Oliver</p>
+      </li>
+      <li class="panel-block">
+        <span class="panel-icon is-size-4">
+          <i class="fas fa-user-edit is-size-4"></i>
+        </span>
+        <p class="is-size-4">Zoe</p>
+      </li>
+      <li class="panel-block">
+        <span class="panel-icon is-size-4">
+          <i class="fas fa-user-edit is-size-4"></i>
+        </span>
+        <p class="is-size-4">Jack</p>
+      </li>
+      <li class="panel-block">
+        <span class="panel-icon is-size-4">
+          <i class="fas fa-user-edit is-size-4"></i>
+        </span>
+        <p class="is-size-4">Victor</p>
+      </li>
+      <li class="panel-block">
+        <span class="panel-icon is-size-4">
+          <i class="fas fa-user-edit is-size-4"></i>
+        </span>
+        <p class="is-size-4">Adam</p>
+      </li>
+      <li class="panel-block">
+        <span class="panel-icon is-size-4">
+          <i class="fas fa-user-edit is-size-4"></i>
+        </span>
+        <p class="is-size-4">Daisy</p>
+      </li>
+      <li class="panel-block">
+        <span class="panel-icon is-size-4">
+          <i class="fas fa-user-edit is-size-4"></i>
+        </span>
+        <p class="is-size-4">Thomas</p>
+      </li>
+      <li class="panel-block">
+        <span class="panel-icon is-size-4">
+          <i class="fas fa-user-edit is-size-4"></i>
+        </span>
+        <p class="is-size-4">Ryan</p>
+      </li>
+      <li class="panel-block">
+        <span class="panel-icon is-size-4">
+          <i class="fas fa-user-edit is-size-4"></i>
+        </span>
+        <p class="is-size-4">Logan</p>
+      </li>  
+      <li class="panel-block">
+        <span class="panel-icon is-size-4">
+          <i class="fas fa-user-edit is-size-4"></i>
+        </span>
+        <p class="is-size-4">Quinn</p>
+      </li>
+      <li class="panel-block">
+        <span class="panel-icon is-size-4">
+          <i class="fas fa-user-edit is-size-4"></i>
+        </span>
+        <p class="is-size-4">Max</p>
+      </li>
+      <li class="panel-block">
+        <span class="panel-icon is-size-4">
+          <i class="fas fa-user-edit is-size-4"></i>
+        </span>
+        <p class="is-size-4">Henry</p>
+      </li>
+      <li class="panel-block">
+        <span class="panel-icon is-size-4">
+          <i class="fas fa-user-edit is-size-4"></i>
+        </span>
+        <p class="is-size-4">Katie</p>
+      </li>
+      <li class="panel-block">
+        <span class="panel-icon is-size-4">
+          <i class="fas fa-user-edit is-size-4"></i>
+        </span>
+        <p class="is-size-4">Frankie</p>
+      </li>
+      <li class="panel-block">
+        <span class="panel-icon is-size-4">
+          <i class="fas fa-user-edit is-size-4"></i>
+        </span>
+        <p class="is-size-4">Eva</p>
+      </li> 
+    </ul>
+  </div>
+  <br>
+</div>
+<br>
+<script src="main.js"></script>
 </body>
 </html>

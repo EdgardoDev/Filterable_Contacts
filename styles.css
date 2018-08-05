@@ -1,1 +1,10 @@
 /*** Styles for the list ***/
+.panel-heading.header {
+  background-color: #00d1b2;
+  font-size: 1.5rem;
+}
+
+input {
+  border: 2px solid #ccc !important;
+}
+
